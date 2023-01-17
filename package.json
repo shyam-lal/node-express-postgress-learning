@@ -1,0 +1,7 @@
+{
+    "name": "node-postgress-training",
+    "version": "1.0.0",
+    "description": "RESTful API with Node.js, Express, and PostgreSQL",
+    "main": "app.js",
+    "license": "lal"
+  }
