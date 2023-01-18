@@ -115,6 +115,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const req = require('express/lib/request')
+const db = require('./queries')
 const app = express()
 const port = 3000
 
@@ -125,9 +126,7 @@ app.use(
     })
 )
 
-app.get('/', (req, res) => {
-    res.json({info: 'Test Get Request'})
-})
+app.get('/users', db.getUsers)
 
 app.listen(port, () => {
     console.log(`App runnin on ${port}`)
